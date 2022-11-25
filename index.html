@@ -4,13 +4,14 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
 
   <body>
     <header class="page-header">
       <nav class="navigation">
         <a class="navigation-logio" href="#">
-          <img class="page-header-logo" src="/images/device_logo.png" alt="Logo Device" width="145" height="36">
+          <img class="page-header-logo" src="/images/logo.png" alt="Logo Device" width="145" height="36">
         </a>
         <ul class="navigation-list">
           <li class="navigation-item">
@@ -68,7 +69,10 @@
     <main class="main-index">
       <section class="slider">
         <h1 class="gallery-title">Порхает как бабочка, жалит как пчела!</h1>
-        <img class="slider-image" src="/images/copter.png" alt="Квадрокоптер" width="560" height="560">
+        <p class="gallery-discription">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
+          замаскированным под стандартную камеру.
+        </p>
+        <img class="slider-image" src="/images/copter-hero-slider.png" alt="Квадрокоптер" width="560" height="560">
         <button class="slider-button slider-next" type="button">
           <span class="visually-hidden">Предыдущее фото</span>
         </button>
@@ -76,6 +80,16 @@
           <span class="visually-hidden">Следующее фото</span>
         </button>
       </section>
+      <ul class="benefite-list">
+        <li class="benefite-item">
+          <h2 class="benefite-title">800 м</h2>
+          <p class="benefite-discription">Дальность полета</p>
+        </li>
+        <li class="benefite-item">
+          <h2 class="benefite-title">50 м</h2>
+          <p class="benefite-discription">Радиус поражения</p>
+        </li>
+      </ul>
       <ol class="slider-pagination">
         <li class="slider-pagination-item">
           <button class="slider-pagination-button" type="button">
@@ -97,27 +111,33 @@
         <h2 class="visually-hidden">Список категорий каталога</h2>
         <ul class="category-list">
           <li class="category-item">
-            <img class="catalog-images" src="#" alt="" width="160" height="160">
+            <img class="catalog-images" src="/images/index-catalog-images-virtual.png" alt="Виртуальная
+            реальность" width="160" height="160">
             <p class="category-discription">Виртуальная реальность</p>
           </li>
           <li class="category-item">
-            <img class="catalog-images" src="#" alt="" width="160" height="160">
+            <img class="catalog-images" src="/images/index-catalog-images-monopod.png" alt="Моноподы
+            для селфи" width="160" height="160">
             <p class="category-discription">Моноподы для селфи</p>
           </li>
           <li class="category-item">
-            <img class="catalog-images" src="#" alt="" width="160" height="160">
+            <img class="catalog-images" src="/images/index-catalog-images-camera.png" alt="Экшн-камеры" width="160"
+              height="160">
             <p class="category-discription">Экшн-камеры</p>
           </li>
           <li class="category-item">
-            <img class="catalog-images" src="#" alt="" width="160" height="160">
+            <img class="catalog-images" src="/images/index-catalog-images-braslet.png" alt="Фитнес-браслеты" width="160"
+              height="160">
             <p class="category-discription">Фитнес-браслеты</p>
           </li>
           <li class="category-item">
-            <img class="catalog-images" src="#" alt="" width="160" height="160">
+            <img class="catalog-images" src="/images/index-catalog-images-watch.png" alt="Умные часы" width="160"
+              height="160">
             <p class="category-discription">Умные часы</p>
           </li>
           <li class="category-item">
-            <img class="catalog-images" src="#" alt="" width="160" height="160">
+            <img class="catalog-images" src="/images/index-catalog-images-copter.png" alt="Квадрокоптеры" width="160"
+              height="160">
             <p class="category-discription">Квадрокоптеры</p>
           </li>
         </ul>
@@ -132,21 +152,21 @@
           </nav>
           <div class="tabs=body">
             <div id="tab_01" class="tabs-block">
-              <img class="tabs-images" src="#" alt="" width="136" height="164">
+              <img class="tabs-images" src="/images/delivery.png" alt="Доставка" width="136" height="164">
               <h1 class="tabs-headline">Доставка</h1>
               <p class="tabs-discription">Мы с удовольствием доставим ваш товар прямо
                 к вашему подъезду совершенно бесплатно! Ведь
                 мы неплохо заработаем, поднимая его на ваш этаж.</p>
             </div>
             <div id="tab_02" class="tabs-block">
-              <img class="tabs-images" src="#" alt="" width="136" height="164">
+              <img class="tabs-images" src="/images/guarantee.png" alt="Гарантия" width="136" height="164">
               <h1 class="tabs-headline">Гарантия</h1>
               <p class="tabs-discription">Если из-за возгорания купленного у нас товара у вас
                 сгорит дом — не переживайте, мы выдадим вам новый.
                 Товар, не дом, конечно же.</p>
             </div>
             <div id="tab_03" class="tabs-block">
-              <img class="tabs-images" src="#" alt="" width="136" height="164">
+              <img class="tabs-images" src="/images/credit.png" alt="Кредит" width="136" height="164">
               <h1 class="tabs-headline">Кредит</h1>
               <p class="tabs-discription">Залезть в долговую яму стало проще!
                 Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка,
@@ -157,8 +177,8 @@
       </section>
       <section class="delivery">
         <h2 class="delivery-headline">Доставим редкий товар под заказ</h2>
-        <img class="delivery-images" src="#" alt="Доставка" width="125" height="100">
-        <img class="delivery-images" src="#" alt="Информация" width="125" height="100">
+        <img class="delivery-images" src="/images/delivery-car.png" alt="Доставка" width="125" height="100">
+        <img class="delivery-images" src="/images/delivery-info.png" alt="Информация" width="125" height="100">
       </section>
       <div class="index-columns">
         <section class="about">
@@ -184,17 +204,17 @@
           <h1 class="contacts-headline">Контакты</h1>
           <p class="contacts-discription">Вы можете забрать товар сами, заехав в наш офис.
             Заодно сможете проверить работоспособность покупки. </p>
-          <ul class="address">
-            <li class="address-discription">
+          <ul class="address-list">
+            <li class="address-items">
               <h2 class="address-headline">Интернет-магазин «Девайс»</h2>
-              <p class="address-discription-item">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+              <p class="address-discription">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
             </li>
             <li class="phone">
               <p class="phone-discription">+7 (812) 812-12-12</p>
             </li>
           </ul>
-          <ul class="work-time">
-            <li class="work-time">
+          <ul class="work-list">
+            <li class="work-time-item">
               <h2 class="work-time-headline">Время работы</h2>
               <p class="work-time-discription">пн—пт: с 10:00 до 22:00</p>
             </li>
@@ -217,13 +237,14 @@
             <input class="input" type="text" id="appointment-email" name="appointment-email" required="">
             <button class="input-button" type="submit">Подписаться</button>
           </form>
-          <img class="label-images" src="#" alt="Это бесплатно" width="16" height="16">
+          <img class="label-images" src="/images/checked-icon.png" alt="Это бесплатно" width="16" height="16">
+          <p class="lable-discription">Это бесплатно</p>
         </section>
       </div>
     </main>
     <footer class="page-footer">
       <div class="page-footer-conteiner">
-        <img class="contacts-logo" src="/images/device_footer_logo.png" width="145" height="36" alt="Device logo">
+        <img class="contacts-logo" src="/images/device-footer-logo.png" width="145" height="36" alt="Device logo">
         <p class="footer-discription">Санкт-Петербург, набережная
           реки Карповки, 5, литера П.</p>
         <ul class="footer-social-list">
@@ -255,7 +276,7 @@
           </li>
         </ul>
         <a class="footer-contacts-phone" href="#">+7 (812) 812-12-12</a>
-        <img class="contacts-logo" src="images/htmlacademy_logo.png" width="115" height="33" alt="Логотип академии">
+        <img class="contacts-logo" src="/images/htmlacademy-logo.png" width="115" height="33" alt="Логотип академии">
       </div>
     </footer>
   </body>
