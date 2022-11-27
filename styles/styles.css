@@ -293,3 +293,12 @@ body {
 .page-footer {
   background: #444444;
 }
+
+.footer-discription {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+}
