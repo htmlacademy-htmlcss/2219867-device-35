@@ -42,22 +42,13 @@ body {
   color: black;
 }
 
-.main-menu {
-  font-family: 'Rubik';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 18px;
-  color: black;
-}
-
 .navigation-user {
   font-family: 'Rubik';
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
-  color: black;
+  color: #000000;
 }
 
 .gallery-title {
@@ -109,7 +100,7 @@ body {
   color: #000000;
 }
 
-.tabs-headline {
+.title {
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 800;
@@ -118,7 +109,7 @@ body {
   color: #000000;
 }
 
-.tabs-discription {
+.discription {
   font-family: 'Rubik';
   font-style: normal;
   font-weight: 400;
@@ -127,7 +118,24 @@ body {
   color: #000000;
 }
 
-.delivery-headline {
+.delivery {
+  padding: 40px;
+}
+
+.button-delivery {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #000000;
+  text-decoration: none;
+}
+
+.delivery-item {
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 800;
@@ -274,7 +282,7 @@ body {
   line-height: 21px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: #000000;
 }
 
 .footer-contacts-phone {
@@ -294,11 +302,29 @@ body {
   background: #444444;
 }
 
-.footer-discription {
+.footer-adress {
   font-family: 'Rubik';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   color: #FFFFFF;
+}
+
+.inner-header-title {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+  color: #000000;
+}
+
+.breadcrumbs-link {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
 }
