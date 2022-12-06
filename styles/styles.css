@@ -22,7 +22,15 @@
   font-display: swap;
 }
 
+.html {
+  height: 100%;
+}
+
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: 'Rubik';
   font-style: normal;
   font-weight: 400;
@@ -31,7 +39,45 @@ body {
   background-color: white;
 }
 
-.navigation-list {
+.container {
+  margin: 0 auto;
+  width: 1160px;
+}
+
+.main-container {
+  flex-grow: 1;
+}
+
+.user-menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation-user {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-item {
+  margin-left: 26px;
+}
+
+.main-menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation-user-list {
+  display: flex;
+}
+
+.slider {
+  display: flex;
+  flex-direction: column;
+}
+
+.navigation-user-list {
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 800;
@@ -40,6 +86,8 @@ body {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: black;
+  margin: 0;
+  padding: 0;
 }
 
 .navigation-user {
@@ -49,6 +97,51 @@ body {
   font-size: 18px;
   line-height: 30px;
   color: #000000;
+  margin: 0;
+  padding: 0;
+}
+
+.category-list {
+  display: grid;
+  grid-template-columns: 160px 160px 160px 160px 160px 160px;
+  gap: 40px;
+  margin: o;
+  padding: 0;
+}
+
+.tabs {
+  display: flex;
+}
+
+.tabs-items {
+  display: flex;
+  flex-direction: column;
+}
+
+.tabs-body {
+  margin: 0;
+  padding: 0;
+}
+
+.delivery {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.index-columns {
+  display: flex;
+}
+
+.appointment-title-appointment-discription {
+  display: flex;
+  justify-content: space-between;
+}
+
+.appointment-form-lable-discription {
+  display: flex;
+  justify-content: space-between;
 }
 
 .gallery-title {
@@ -193,7 +286,7 @@ body {
   color: #444444;
 }
 
-.address-headline {
+.address-title {
   font-family: 'Rubik';
   font-style: normal;
   font-weight: 700;
@@ -245,6 +338,8 @@ body {
   font-size: 50px;
   line-height: 50px;
   color: #000000;
+  margin: 0;
+  padding: 0;
 }
 
 .appointment-form-discription {
@@ -254,6 +349,8 @@ body {
   font-size: 18px;
   line-height: 30px;
   color: #444444;
+  margin: 0;
+  padding: 0;
 }
 
 .lable-discription {
@@ -263,6 +360,8 @@ body {
   font-size: 18px;
   line-height: 30px;
   color: #444444;
+  margin: 0;
+  padding: o;
 }
 
 .footer-discription {
@@ -274,6 +373,12 @@ body {
   color: black;
 }
 
+.page-footer-conteiner {
+  display: grid;
+  grid-template-columns: 239px 444px 175px;
+  gap: 120px;
+}
+
 .navigation-link {
   font-family: 'Raleway';
   font-style: normal;
@@ -281,11 +386,46 @@ body {
   font-size: 18px;
   line-height: 21px;
   letter-spacing: 0.2em;
-  text-transform: uppercase;
   color: #000000;
 }
 
+.footer-menu-list {
+ display: flex;
+ padding-left: 35px;
+}
+
+.footer-social-list {
+  display: flex;
+}
+
+.footer-navigation-link {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin: 0;
+  padding: o;
+}
+
 .footer-contacts-phone {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+}
+
+.footer-contacts-phone-contacts-logo {
+  margin: 0;
+  padding: 0;
+}
+
+.address-footer-discription {
   font-family: 'Rubik';
   font-style: normal;
   font-weight: 400;
