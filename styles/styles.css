@@ -39,7 +39,37 @@ body {
   background-color: white;
 }
 
-.container {
+.page-header {
+  padding-top: 40px;
+  background-color: #FFE17F;
+}
+
+.page-header-logo {
+  padding-bottom: 30px;
+}
+
+.header-container {
+  margin: 0 auto;
+  width: 1160px;
+}
+
+.slider-container {
+  margin: 0 auto;
+  width: 1160px;
+}
+
+.category-container {
+  margin: 0 auto;
+  width: 1160px;
+}
+
+.benefits-container {
+  margin: 0 auto;
+  width: 1160px;
+  background-color: #F0F0F0;
+}
+
+.delivery-container {
   margin: 0 auto;
   width: 1160px;
 }
@@ -51,33 +81,37 @@ body {
 .user-menu {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 30px;
 }
 
 .navigation-user {
   display: flex;
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 
 .navigation-item {
   margin-left: 26px;
 }
 
+.main-navigation-item {
+  margin-left: 45px;
+}
+
+.navigation-link {
+  text-decoration: none;
+}
+
 .main-menu {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 20px;
 }
 
 .navigation-user-list {
   display: flex;
-}
-
-.slider {
-  display: flex;
-  flex-direction: column;
-}
-
-.navigation-user-list {
+  list-style-type: none;
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 800;
@@ -90,7 +124,9 @@ body {
   padding: 0;
 }
 
-.navigation-user {
+.user-navigation-link {
+  text-decoration: none;
+  padding-left: 45px;
   font-family: 'Rubik';
   font-style: normal;
   font-weight: 400;
@@ -99,6 +135,47 @@ body {
   color: #000000;
   margin: 0;
   padding: 0;
+}
+
+.slider {
+  display: flex;
+  flex-direction: column;
+}
+
+.slider-item {
+  display: grid;
+  gap: 40px;
+  grid-template-columns: 560px 560px;
+
+}
+
+.slider-item-1 {
+
+}
+
+.slider-pagination {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.slider-pagination-item {
+  padding-right: 20px;
+}
+
+.benefite-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.benefite-item {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-right: 20px;
 }
 
 .category-list {
@@ -132,6 +209,8 @@ body {
 
 .index-columns {
   display: flex;
+  margin: 0 auto;
+  width: 1160px;
 }
 
 .appointment-title-appointment-discription {
@@ -184,12 +263,25 @@ body {
   background-color: #FFE17F;
 }
 
+.category-list {
+  margin: 0;
+  padding: 0;
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
 .category-item {
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
   line-height: 24px;
+  color: #000000;
+  list-style-type: none;
+}
+
+.category-link {
+  text-decoration: none;
   color: #000000;
 }
 
@@ -200,6 +292,11 @@ body {
   font-size: 50px;
   line-height: 50px;
   color: #000000;
+  margin: 0;
+  padding: 0;
+  margin-left: 116px;
+  margin-right: 203px;
+  margin-bottom: 34px;
 }
 
 .discription {
@@ -209,10 +306,17 @@ body {
   font-size: 18px;
   line-height: 30px;
   color: #000000;
+  margin: 0;
+  padding: 0;
+  margin-left: 116px;
+  margin-right: 203px;
 }
 
 .delivery {
-  padding: 40px;
+  margin: o;
+  padding: 0;
+  margin-top: 70px;
+  margin-bottom: 70px;
 }
 
 .button-delivery {
@@ -266,6 +370,11 @@ body {
   line-height: 20px;
   letter-spacing: -0.02em;
   color: #000000
+}
+
+.subscription-form {
+  margin: 0 auto;
+  width: 1160px;
 }
 
 .contacts-headline {
@@ -373,10 +482,16 @@ body {
   color: black;
 }
 
+.page-footer {
+  background-color: #444444;
+}
+
 .page-footer-conteiner {
   display: grid;
   grid-template-columns: 239px 444px 175px;
   gap: 120px;
+  margin: 0 auto;
+  width: 1160px;
 }
 
 .navigation-link {
@@ -390,8 +505,8 @@ body {
 }
 
 .footer-menu-list {
- display: flex;
- padding-left: 35px;
+  display: flex;
+  padding-left: 35px;
 }
 
 .footer-social-list {
@@ -434,9 +549,7 @@ body {
   color: #ffffff;
 }
 
-.page-header {
-  background-color: #FFE17F;
-}
+
 
 .page-footer {
   background: #444444;

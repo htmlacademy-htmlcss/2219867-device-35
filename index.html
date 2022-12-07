@@ -8,32 +8,34 @@
   </head>
 
   <body>
-    <a class="navigation-logio" href="#">
-      <img class="page-header-logo" src="/images/logo.png" alt="Logo Device" width="145" height="36">
-    </a>
-    <div class="container">
-      <header class="page-header">
+
+
+    <header class="page-header">
+      <div class="header-container">
+        <a class="navigation-logio" href="#">
+          <img class="page-header-logo" src="/images/logo.png" alt="Logo Device" width="145" height="36">
+        </a>
         <nav class="navigation">
 
           <div class="user-menu">
-            <form action="#" method="get">
-              <input name="s" placeholder="Поиск по сайту" type="search">
-              <button type="submit">Найти</button>
+            <form class="menu-search" method="get">
+              <input type="text" placeholder="Поиск по сайту">
+              <button class="menu-search-button" type="submit">Найти</button>
             </form>
 
             <ul class="navigation-user">
               <li class="navigation-item">
-                <a class="navigation-link" href="#">
+                <a class="user-navigation-link" href="#">
                   <span class="visually-hidden">Войти</span>
                 </a>
               </li>
               <li class="navigation-item">
-                <a class="navigation-link" href="#">
+                <a class="user-navigation-link" href="#">
                   <span class="visually-hidden">Сравнить</span>
                 </a>
               </li>
               <li class="navigation-item">
-                <a class="navigation-link" href="#">
+                <a class="user-navigation-link" href="#">
                   <span class="visually-hidden">Корзина</span>
                 </a>
               </li>
@@ -43,83 +45,91 @@
           <div class="main-menu">
             <button class="catalog-button">Каталог товаров</button>
             <ul class="navigation-user-list">
-              <li class="navigation-item">
+              <li class="main-navigation-item">
                 <a class="navigation-link" href="dilevery.html">Доставка</a>
               </li>
-              <li class="navigation-item">
+              <li class="main-navigation-item">
                 <a class="navigation-link" href="guarantee.html">Гарантия</a>
               </li>
-              <li class="navigation-item">
+              <li class="main-navigation-item">
                 <a class="navigation-link" href="contacts.html">Контакты</a>
               </li>
             </ul>
           </div>
 
         </nav>
-      </header>
+      </div>
+    </header>
+
+
+    <div class="slider-container">
       <main class="main-container main-index">
         <div class="slider">
           <div class="slider-item">
             <img class="slider-image" src="/images/copter-hero-slider.png" alt="Квадрокоптер" width="560" height="560">
-            <h1 class="gallery-title">Порхает как бабочка, жалит как пчела!</h1>
-            <p class="gallery-discription">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
-              замаскированным под стандартную камеру.
-            </p>
-            <button class="slider-button">Подробнее</button>
-            <ul class="benefite-list">
-              <li class="benefite-item">
-                <h2 class="benefite-title">800 м</h2>
-                <p class="benefite-discription">Дальность полета</p>
-              </li>
-              <li class="benefite-item">
-                <h2 class="benefite-title">50 м</h2>
-                <p class="benefite-discription">Радиус поражения</p>
-              </li>
-            </ul>
-
+            <div class="slider-item-1">
+              <h1 class="gallery-title">Порхает как бабочка, жалит как пчела!</h1>
+              <p class="gallery-discription">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
+                замаскированным под стандартную камеру.
+              </p>
+              <button class="slider-button">Подробнее</button>
+              <ul class="benefite-list">
+                <li class="benefite-item">
+                  <h2 class="benefite-title">800 м</h2>
+                  <p class="benefite-discription">Дальность полета</p>
+                </li>
+                <li class="benefite-item">
+                  <h2 class="benefite-title">50 м</h2>
+                  <p class="benefite-discription">Радиус поражения</p>
+                </li>
+              </ul>
+            </div>
           </div>
 
           <div class="slider-item">
             <img class="slider-image" src="/images/tracker-hero-slider.png" alt="Квадрокоптер" width="560" height="560">
-            <h1 class="gallery-title">Худеем правильно!</h1>
-            <p class="gallery-discription">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия
-              и
-              соблюдать диету.
-            </p>
-            <button class="slider-button">Подробнее</button>
-            <ul class="benefite-list">
-              <li class="benefite-item">
-                <h2 class="benefite-title">48 часов</h2>
-                <p class="benefite-discription">Без подзарядки</p>
-              </li>
-            </ul>
-
+            <div class="slider-item-1">
+              <h1 class="gallery-title">Худеем правильно!</h1>
+              <p class="gallery-discription">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать
+                занятия
+                и
+                соблюдать диету.
+              </p>
+              <button class="slider-button">Подробнее</button>
+              <ul class="benefite-list">
+                <li class="benefite-item">
+                  <h2 class="benefite-title">48 часов</h2>
+                  <p class="benefite-discription">Без подзарядки</p>
+                </li>
+              </ul>
+            </div>
           </div>
 
           <div class="slider-item">
             <img class="slider-image" src="/images/selfiestick-hero-slider.png" alt="Квадрокоптер" width="560"
               height="560">
-            <h1 class="gallery-title">Делай селфи как Бен Стиллер! </h1>
-            <p class="gallery-discription">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь,
-              Карл!)
-              метров длиной и весом всего 5 кг.
-            </p>
-            <button class="slider-button">Подробнее</button>
-            <ul class="benefite-list">
-              <li class="benefite-item">
-                <h2 class="benefite-title">8,5 м</h2>
-                <p class="benefite-discription">Длина палки</p>
-              </li>
-              <li class="benefite-item">
-                <h2 class="benefite-title">5 кг</h2>
-                <p class="benefite-discription">Вес палки</p>
-              </li>
-              <li class="benefite-item">
-                <h2 class="benefite-title">Карбон</h2>
-                <p class="benefite-discription">Материал</p>
-              </li>
-            </ul>
-
+            <div class="slider-item-1">
+              <h1 class="gallery-title">Делай селфи как Бен Стиллер! </h1>
+              <p class="gallery-discription">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь,
+                Карл!)
+                метров длиной и весом всего 5 кг.
+              </p>
+              <button class="slider-button">Подробнее</button>
+              <ul class="benefite-list">
+                <li class="benefite-item">
+                  <h2 class="benefite-title">8,5 м</h2>
+                  <p class="benefite-discription">Длина палки</p>
+                </li>
+                <li class="benefite-item">
+                  <h2 class="benefite-title">5 кг</h2>
+                  <p class="benefite-discription">Вес палки</p>
+                </li>
+                <li class="benefite-item">
+                  <h2 class="benefite-title">Карбон</h2>
+                  <p class="benefite-discription">Материал</p>
+                </li>
+              </ul>
+            </div>
           </div>
 
 
@@ -149,69 +159,81 @@
           </ol>
         </div>
 
+
+
         <section class="category">
-          <h2 class="visually-hidden">Список категорий каталога</h2>
-          <ul class="category-list">
-            <li class="category-item">
-              <a href="#">Виртуальная реальность</a>
-            </li>
-            <li class="category-item">
-              <a href="#">Моноподы для селфи</a>
-            </li>
-            <li class="category-item">
-              <a href="#">Экшн-камеры</a>
-            </li>
-            <li class="category-item">
-              <a href="#">Фитнес-браслеты</a>
-            </li>
-            <li class="category-item">
-              <a href="#">Умные часы</a>
-            </li>
-            <li class="category-item">
-              <a href="#">Квадрокоптеры</a>
-            </li>
-          </ul>
+          <div class="category-container">
+            <h2 class="visually-hidden">Список категорий каталога</h2>
+            <ul class="category-list">
+              <li class="category-item">
+                <a class="category-link" href="#">Виртуальная реальность</a>
+              </li>
+              <li class="category-item">
+                <a class="category-link" href="#">Моноподы для селфи</a>
+              </li>
+              <li class="category-item">
+                <a class="category-link" href="#">Экшн-камеры</a>
+              </li>
+              <li class="category-item">
+                <a class="category-link" href="#">Фитнес-браслеты</a>
+              </li>
+              <li class="category-item">
+                <a class="category-link" href="#">Умные часы</a>
+              </li>
+              <li class="category-item">
+                <a class="category-link" href="#">Квадрокоптеры</a>
+              </li>
+            </ul>
+          </div>
         </section>
-        <section class="benefits">
-          <h2 class="visually-hidden" hidden>Описание преимуществ</h2>
-          <div class="tabs">
-            <nav class="tabs-items">
-              <button class="tabs-button" type="button">Доставка</button>
-              <button class="tabs-button" type="button">Гарантия</button>
-              <button class="tabs-button" type="button">Кредит</button>
-            </nav>
-            <div class="tabs-body">
-              <div id="tab_01" class="tabs-block">
-                <div class="title">Доставка</div>
-                <div class="discription">Мы с удовольствием доставим ваш товар прямо
-                  к вашему подъезду совершенно бесплатно! Ведь
-                  мы неплохо заработаем, поднимая его на ваш этаж.
+
+        <div class="benefits-container">
+          <section class="benefits">
+            <div class="benefits-container">
+              <h2 class="visually-hidden" hidden>Описание преимуществ</h2>
+              <div class="tabs">
+                <nav class="tabs-items">
+                  <button class="tabs-button" type="button">Доставка</button>
+                  <button class="tabs-button" type="button">Гарантия</button>
+                  <button class="tabs-button" type="button">Кредит</button>
+                </nav>
+                <div class="tabs-body">
+                  <div id="tab_01" class="tabs-block">
+                    <div class="title">Доставка</div>
+                    <div class="discription">Мы с удовольствием доставим ваш товар прямо
+                      к вашему подъезду совершенно бесплатно! Ведь
+                      мы неплохо заработаем, поднимая его на ваш этаж.
+                    </div>
+                  </div>
+                  <div id="tab_02" class="tabs-block">
+                    <div class="title">Гарантия</div>
+                    <div class="discription">Если из-за возгорания купленного у нас товара у вас
+                      сгорит дом — не переживайте, мы выдадим вам новый.
+                      Товар, не дом, конечно же.</div>
+                  </div>
+                  <div id="tab_03" class="tabs-block">
+                    <div class="title">Кредит</div>
+                    <div class="discription">Залезть в долговую яму стало проще!
+                      Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка,
+                      разумеется.</div>
+                  </div>
                 </div>
               </div>
-              <div id="tab_02" class="tabs-block">
-                <div class="title">Гарантия</div>
-                <div class="discription">Если из-за возгорания купленного у нас товара у вас
-                  сгорит дом — не переживайте, мы выдадим вам новый.
-                  Товар, не дом, конечно же.</div>
-              </div>
-              <div id="tab_03" class="tabs-block">
-                <div class="title">Кредит</div>
-                <div class="discription">Залезть в долговую яму стало проще!
-                  Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка,
-                  разумеется.</div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <div class="delivery">
-          <div class="delivery-item">
-            <a class="button-delivery" href="#"><img src="/images/delivery-car.png" width="125" height="100"
-                alt="Изображение автомобиля">Доставим редкий товар под заказ</a>
-          </div>
-          <button class="button-info" type="button">
-            <span class="visually-hidden">Информауия о</span>
-          </button>
+          </section>
         </div>
+
+        <div class="delivery-container">
+          <div class="delivery">
+            <div class="delivery-item">
+              <img src="/images/delivery-car.png" width="125" height="100" alt="Изображение автомобиля">
+              <a class="button-delivery" href="#">Доставим редкий товар под заказ</a>
+            </div>
+            <button class="button-info" type="button">
+              <span class="visually-hidden">Информауия о</span>
+            </button>
+          </div>
+        </div>
+
         <div class="index-columns">
           <section class="about">
             <div class="about-headline">О нас</div>
@@ -325,7 +347,7 @@
 
         </div>
       </footer>
-    </div>
+
   </body>
 
 </html>
