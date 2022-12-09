@@ -39,6 +39,17 @@ body {
   background-color: white;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .page-header {
   padding-top: 40px;
   background-color: #FFE17F;
@@ -56,6 +67,7 @@ body {
 .slider-container {
   margin: 0 auto;
   width: 1160px;
+  position: relative;
 }
 
 .category-container {
@@ -175,15 +187,44 @@ body {
 }
 
 .slider-pagination {
-  display: flex;
-  align-items: center;
-  list-style-type: none;
   margin: 0;
   padding: 0;
+  list-style-type: none;
+  padding-right: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: absolute;
+  margin-left: 542px;
+  margin-top: 500px;
 }
 
 .slider-pagination-item {
-  padding-right: 20px;
+  margin: 0 4px;
+}
+
+.slider-pagination-button {
+  width: 8px;
+  height: 8px;
+  margin: 0;
+  padding: 0;
+  background-color: #dbdbdb;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider-pagination-button:hover {
+  background-color: #000000;
+}
+
+.slider-pagination-button:focus {
+  background-color: #000000;
+  outline: none;
+}
+
+.slider-pagination-button-current {
+  background-color: #B3B3B3;
 }
 
 .benefite-list {
@@ -281,7 +322,7 @@ body {
   padding: 0;
 }
 
-.slider-button {
+.hero-button {
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 800;
@@ -293,6 +334,35 @@ body {
   color: #000000;
   border: none;
   margin-bottom: 50px;
+  background-color: transparent;
+}
+
+.slider-button-container {
+  display: flex;
+  justify-content: space-between;
+  width: 540px;
+  position: absolute;
+  margin-top: 211px;
+}
+
+.slider-button-right {
+  width: 20px;
+  height: 60px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-image: url("../images/slider\ arrow\ right.svg");
+}
+
+.slider-button-left {
+  width: 20px;
+  height: 60px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-image: url("../images/slider\ arrow\ left.svg");
 }
 
 .catalog-images {
@@ -391,6 +461,14 @@ body {
   text-decoration: none;
 }
 
+.button-info {
+  width: 125px;
+  height: 100px;
+  background-color: #DCDCDC;
+  opacity: 50%;
+  border: none;
+}
+
 .delivery-item {
   font-family: 'Raleway';
   font-style: normal;
@@ -437,8 +515,10 @@ body {
   font-size: 18px;
   line-height: 20px;
   letter-spacing: -0.02em;
-  color: #000000 margin: 0;
+  color: #000000;
+  margin: 0;
   padding: 0;
+  padding-bottom: 30px;
 }
 
 .about-item {
@@ -464,7 +544,6 @@ body {
   text-transform: uppercase;
   color: #000000;
   text-decoration: none;
-  margin-top: 30px;
 }
 
 .subscription-form {
@@ -498,6 +577,9 @@ body {
   font-size: 18px;
   line-height: 30px;
   color: #444444;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
 }
 
 .address-title {
@@ -531,6 +613,10 @@ body {
   margin-bottom: 30px;
 }
 
+.work-list {
+  padding-bottom: 30px;
+}
+
 .work-time-headline {
   font-family: 'Rubik';
   font-style: normal;
@@ -561,7 +647,6 @@ body {
   text-transform: uppercase;
   color: #000000;
   text-decoration: none;
-  margin-top: 30px;
 }
 
 .appointment-form-title {
@@ -580,7 +665,6 @@ body {
 .appointment-form-lable-discription {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 56px;
 }
 
 .appointment-form-discription {
@@ -595,6 +679,27 @@ body {
   margin-top: 64px;
   margin-bottom: 144px;
   margin-left: 252px;
+}
+
+.subscription-input {
+  width: 557px;
+  height: 55px;
+  border: none;
+  border-bottom: 3px solid #C4C4C4;
+  background-color: transparent;
+}
+
+.subscription-input-button {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  width: 253px;
+  height: 55px;
+  border: 3px solid #C4C4C4;
 }
 
 .lable-discription {

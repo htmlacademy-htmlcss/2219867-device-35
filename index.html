@@ -72,7 +72,7 @@
               <p class="gallery-discription">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
                 замаскированным под стандартную камеру.
               </p>
-              <button class="slider-button">Подробнее</button>
+              <button class="hero-button">Подробнее</button>
               <ul class="benefite-list">
                 <li class="benefite-item">
                   <h2 class="benefite-title">800 м</h2>
@@ -95,7 +95,7 @@
                 и
                 соблюдать диету.
               </p>
-              <button class="slider-button">Подробнее</button>
+              <button class="hero-button">Подробнее</button>
               <ul class="benefite-list">
                 <li class="benefite-item">
                   <h2 class="benefite-title">48 часов</h2>
@@ -114,7 +114,7 @@
                 Карл!)
                 метров длиной и весом всего 5 кг.
               </p>
-              <button class="slider-button">Подробнее</button>
+              <button class="hero-button">Подробнее</button>
               <ul class="benefite-list">
                 <li class="benefite-item">
                   <h2 class="benefite-title">8,5 м</h2>
@@ -132,13 +132,14 @@
             </div>
           </div>
 
-
-          <button class="slider-button slider-next" type="button">
-            <span class="visually-hidden">Предыдущее фото</span>
-          </button>
-          <button class="slider-button slider-prev" type="button">
-            <span class="visually-hidden">Следующее фото</span>
-          </button>
+          <div class="slider-button-container">
+            <button class="slider-button-left slider-next" type="button">
+              <span class="visually-hidden">Предыдущее фото</span>
+            </button>
+            <button class="slider-button-right slider-prev" type="button">
+              <span class="visually-hidden">Следующее фото</span>
+            </button>
+          </div>
 
           <ol class="slider-pagination">
             <li class="slider-pagination-item">
@@ -291,8 +292,8 @@
           <div class="appointment-form-lable-discription">
             <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
               <label class="appointment-form-label" for="appointment-email">email</label>
-              <input class="input" type="text" id="appointment-email" name="appointment-email" required="">
-              <button class="input-button" type="submit">Подписаться</button>
+              <input class="subscription-input" type="text" id="appointment-email" name="appointment-email" required="">
+              <button class="subscription-input-button" type="submit">Подписаться</button>
             </form>
             <p class="lable-discription">Это бесплатно</p>
           </div>
