@@ -179,11 +179,10 @@ body {
   flex-direction: column;
 }
 
-.slider-item {
+.slider-item{
   display: grid;
   gap: 40px;
   grid-template-columns: 560px 560px;
-
 }
 
 .slider-pagination {
