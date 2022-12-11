@@ -51,7 +51,7 @@ body {
 
 .page-header {
   padding-top: 40px;
-  background-color: #FFE17F;
+  background-color: #ffffff;
 }
 
 .page-header-logo {
@@ -61,9 +61,10 @@ body {
 .header-container {
   margin: 0 auto;
   width: 1160px;
+  background-color: #FFE17F;
 }
 
-.slider-container {
+.slider {
   margin: 0 auto;
   width: 1160px;
   position: relative;
@@ -136,6 +137,10 @@ body {
 
 .navigation-link {
   text-decoration: none;
+}
+
+.benefits {
+  background-color: #F0F0F0;
 }
 
 .main-menu {
@@ -359,6 +364,14 @@ body {
   background-color: transparent;
 }
 
+.slider-item:not(.active) {
+  display: none;
+}
+
+.tabs-block:not(.active) {
+  display: none;
+}
+
 .slider-button-container {
   display: flex;
   justify-content: space-between;
@@ -387,6 +400,34 @@ body {
   background-image: url("../images/slider\ arrow\ left.svg");
 }
 
+.slider-button-right:hover {
+  background-color: #000000;
+  opacity: 0.6;
+}
+
+.slider-button-right:focus {
+  background-color: #000000;
+  outline: none;
+}
+
+.slider-button-right-current {
+  background-color: #B3B3B3;
+}
+
+.slider-button-left:hover {
+  background-color: #000000;
+  opacity: 0.6;
+}
+
+.slider-button-left:focus {
+  background-color: #000000;
+  outline: none;
+}
+
+.slider-button-left-current {
+  background-color: #B3B3B3;
+}
+
 .catalog-images {
   background-color: #FFE17F;
 }
@@ -411,6 +452,10 @@ body {
 .category-link {
   text-decoration: none;
   color: #000000;
+}
+
+.category-img {
+  margin-bottom: 32px;
 }
 
 .title {
@@ -682,6 +727,10 @@ body {
   padding: 0;
   margin-top: 64px;
   margin-bottom: 144px;
+}
+
+.appointment-form {
+  background-color: #F0F0F0;
 }
 
 .appointment-form-lable-discription {
@@ -1036,4 +1085,5 @@ body {
 .product-card-content {
   display: flex;
   justify-content: space-between;
+  margin-top: 32px;
 }
