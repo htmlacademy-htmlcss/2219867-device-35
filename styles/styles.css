@@ -56,6 +56,7 @@ body {
 
 .page-header-logo {
   padding-bottom: 30px;
+  margin-left: 60px;
 }
 
 .header-container {
@@ -117,11 +118,15 @@ body {
 .user-menu {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding-bottom: 30px;
+  margin-left: 60px;
+  margin-right: 60px;
 }
 
 .navigation-user {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -147,6 +152,13 @@ body {
   display: flex;
   justify-content: space-between;
   padding-bottom: 20px;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+.navigation-user .navigation-item {
+  min-width: 130px;
+  min-height: 30px;
 }
 
 .navigation-user-list {
@@ -181,12 +193,16 @@ body {
   background: none;
   border: 2px solid #000000;
   border-radius: 50px 0px 0px 50px;
+  width: 359px;
+  height: 40px;
 }
 
 .menu-search-button {
   background: none;
   border: 2px solid #000000;
   border-radius: 0px 50px 50px 0px;
+  width: 160px;
+  height: 46px;
 }
 
 .catalog-button {
@@ -282,6 +298,7 @@ body {
 .tabs-items {
   display: flex;
   flex-direction: column;
+  margin-top: 64px;
 }
 
 .tabs-body {
@@ -370,6 +387,10 @@ body {
 
 .tabs-block:not(.active) {
   display: none;
+}
+
+.tabs-block {
+
 }
 
 .slider-button-container {
@@ -471,6 +492,7 @@ body {
   margin-right: 203px;
   margin-bottom: 34px;
   width: 498px;
+  margin-top: 64px;
 }
 
 .discription {
@@ -484,7 +506,7 @@ body {
   padding: 0;
   margin-left: 116px;
   margin-right: 203px;
-  margin-bottom: 70px;
+  margin-bottom: 144px;
   width: 498px;
 }
 
@@ -736,6 +758,8 @@ body {
 .appointment-form-lable-discription {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  margin-bottom: 56px;
 }
 
 .appointment-form-discription {
@@ -800,7 +824,7 @@ body {
 .page-footer-conteiner {
   display: grid;
   grid-template-columns: 239px 444px 175px;
-  gap: 120px;
+  gap: 64px;
   margin: 0 auto;
   width: 1160px;
 }
