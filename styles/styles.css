@@ -151,6 +151,7 @@ body {
 .main-menu {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding-bottom: 20px;
   margin-left: 60px;
   margin-right: 60px;
@@ -176,9 +177,32 @@ body {
   padding: 0;
 }
 
+.user-navigation-link::before {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 12px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.user::before {
+  padding-right: 12px;
+  background-image: url(../images/user.svg);
+}
+
+.comparison::before {
+  padding-right: 12px;
+  background-image: url(../images/comparison.svg);
+}
+
+.basket::before {
+  padding-right: 12px;
+  background-image: url(../images/basket.svg);
+}
+
 .user-navigation-link {
   text-decoration: none;
-  padding-left: 45px;
   font-family: 'Rubik';
   font-style: normal;
   font-weight: 400;
@@ -187,7 +211,9 @@ body {
   color: #000000;
   margin: 0;
   padding: 0;
+  padding-right: 12px;
 }
+
 
 .input-search {
   background: none;
@@ -216,6 +242,22 @@ body {
   color: #000000;
   border: none;
   background: none;
+  position: relative;
+}
+
+.catalog-button::after {
+  content: "";
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.roundbutton::after {
+  background-image: url(../images/roundbutton.svg);
+  position: absolute;
+  margin-left: 7px;
 }
 
 .slider {
@@ -293,6 +335,20 @@ body {
 
 .tabs {
   display: flex;
+}
+
+.tabs::after {
+  content: "";
+  display: block;
+  width: 136px;
+  height: 164px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.dilevery::after {
+  background-image: url(../images/delivery.svg);
+  margin-top: 64px;
 }
 
 .tabs-items {
@@ -389,10 +445,6 @@ body {
   display: none;
 }
 
-.tabs-block {
-
-}
-
 .slider-button-container {
   display: flex;
   justify-content: space-between;
@@ -461,6 +513,11 @@ body {
 }
 
 .category-item {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.category-link {
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 800;
@@ -468,11 +525,55 @@ body {
   line-height: 24px;
   color: #000000;
   list-style-type: none;
+  text-decoration: none;
 }
 
-.category-link {
+.category-link::before {
+  content: "";
+  display: block;
   text-decoration: none;
-  color: #000000;
+  width: 160px;
+  height: 160px;
+  background-color: #FFE17F;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 32px;
+}
+
+.virtual::before {
+  background-image: url(../images/virtual.svg);
+}
+
+.monopod::before {
+  background-image: url(../images/monopod.svg);
+}
+
+.camera::before {
+  background-image: url(../images/camera.svg);
+}
+
+.bracelet::before {
+  background-image: url(../images/bracelet.svg);
+}
+
+.watch::before {
+  background-image: url(../images/watch.svg);
+}
+
+.copter::before {
+  background-image: url(../images/copter.svg);
+}
+
+.category-link:hover::before {
+  background-color: #FFC700;
+}
+
+.category-link:focus::backdrop {
+  border: 2px solid #AF4FFF;
+}
+
+.category-link:active::before {
+  opacity: 0, 3;
 }
 
 .category-img {
@@ -537,6 +638,28 @@ body {
   background-color: #F0F0F0;
 }
 
+
+.button-car {
+  border: none;
+  width: 125px;
+  height: 100px;
+}
+
+.button-car::before {
+  content: "";
+  display: block;
+  width: 125px;
+  height: 100px;
+  background-color: #FFE17F;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+.auto::before {
+  background-image: url(../images/auto.svg);
+}
+
 .button-delivery {
   font-family: 'Raleway';
   font-style: normal;
@@ -548,14 +671,34 @@ body {
   text-transform: uppercase;
   color: #000000;
   text-decoration: none;
+  width: 125px;
+  height: 100px;
 }
+
 
 .button-info {
   width: 125px;
   height: 100px;
-  background-color: #DCDCDC;
   opacity: 50%;
   border: none;
+}
+
+.button-info::before {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin: 0;
+  padding: 0;
+  background-color: #DCDCDC;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.infoicon::before {
+  border-radius: 100%;
+  margin-left: 42px;
+  background-image: url(../images/infoicon.svg);
 }
 
 .delivery-item {
@@ -1093,7 +1236,7 @@ body {
   margin-left: 40px;
 }
 
-.product-list{
+.product-list {
   display: grid;
   grid-template-columns: 360px 360px;
   gap: 40px;

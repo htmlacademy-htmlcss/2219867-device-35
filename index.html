@@ -25,47 +25,18 @@
 
             <ul class="navigation-user">
               <li class="navigation-item">
-                <a class="user-navigation-link" href="#">
-                  <svg aria-hidden="true" focusable="false" width="15" height="12" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M1 12h13c-.2-2.6-2.1-4.8-4.7-5.5 1-.6 1.7-1.7 1.7-3C11 1.6 9.4 0 7.5 0S4 1.6 4 3.5c0 1.3.7 2.4 1.7 3C3.1 7.2 1.2 9.4 1 12Z"
-                      fill="#000" />
-                  </svg>
+                <a class="user-navigation-link user" href="#">
                   <span class="user-navigation">Войти</span>
                 </a>
               </li>
               <li class="navigation-item">
-                <a class="user-navigation-link" href="#">
-                  <svg aria-hidden="true" focusable="false" width="10" height="12" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <g clip-path="url(#a)" fill="#000">
-                      <path d="M6 0H4v12h2V0ZM2 4H0v8h2V4ZM10 3H8v9h2V3Z" />
-                    </g>
-                    <defs>
-                      <clipPath id="a">
-                        <path fill="#fff" d="M0 0h10v12H0z" />
-                      </clipPath>
-                    </defs>
-                  </svg>
+                <a class="user-navigation-link
+                comparison" href="#">
                   <span class="user-navigation">Сравнить</span>
                 </a>
               </li>
               <li class="navigation-item">
-                <a class="user-navigation-link" href="#">
-                  <svg aria-hidden="true" focusable="false" width="16" height="14" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <g clip-path="url(#a)">
-                      <path
-                        d="m15.3 5-3.5.2L8.6.3C8.5.1 8.2 0 8 0c-.2 0-.5.1-.6.3L4.2 5.2H.7c-.4 0-.7.3-.7.7v.2l1.9 6.8c.2.7.7 1.1 1.4 1.1h9.4c.7 0 1.2-.4 1.4-1.1L16 6v-.2c0-.4-.3-.8-.7-.8ZM8 1.9l2.2 3.2H5.9L8 1.9Z"
-                        fill="#000" />
-                    </g>
-                    <defs>
-                      <clipPath id="a">
-                        <path fill="#fff" d="M0 0h16v14H0z" />
-                      </clipPath>
-                    </defs>
-                  </svg>
+                <a class="user-navigation-link basket" href="#">
                   <span class="user-navigation">Корзина</span>
                 </a>
               </li>
@@ -73,7 +44,7 @@
           </div>
 
           <div class="main-menu">
-            <button class="catalog-button">Каталог товаров</button>
+            <button class="catalog-button roundbutton">Каталог товаров</button>
             <ul class="navigation-user-list">
               <li class="main-navigation-item">
                 <a class="navigation-link" href="dilevery.html">Доставка</a>
@@ -197,28 +168,22 @@
           <h2 class="visually-hidden">Список категорий каталога</h2>
           <ul class="category-list">
             <li class="category-item">
-              <a class="category-link" href="#"><img class="category-img" src="/images/virtual (1).svg" width="160px"
-                  height="160px" alt="Очки виртуальной реальности">Виртуальная реальность</a>
+              <a class="category-link virtual" href="#">Виртуальная реальность</a>
             </li>
             <li class="category-item">
-              <a class="category-link" href="#"><img class="category-img" src="/images/stick (1).svg" width="160px"
-                  height="160px" alt="Селфи палка">Моноподы для селфи</a>
+              <a class="category-link monopod" href="#">Моноподы для селфи</a>
             </li>
             <li class="category-item">
-              <a class="category-link" href="#"><img class="category-img" src="/images/camera (1).svg" width="160px"
-                  height="160px" alt="Камера для съёмок">Экшн-камеры</a>
+              <a class="category-link camera" href="#">Экшн-камеры</a>
             </li>
             <li class="category-item">
-              <a class="category-link" href="#"><img class="category-img" src="/images/fitness (1).svg" width="160px"
-                  height="160px" alt="Браслет для фитнеса">Фитнес-браслеты</a>
+              <a class="category-link bracelet" href="#">Фитнес-браслеты</a>
             </li>
             <li class="category-item">
-              <a class="category-link" href="#"><img class="category-img" src="/images/watch (1).svg" width="160px"
-                  height="160px" alt="Умные часы">Умные часы</a>
+              <a class="category-link watch" href="#">Умные часы</a>
             </li>
             <li class="category-item">
-              <a class="category-link" href="#"><img class="category-img" src="/images/copter (1).svg" width="160px"
-                  height="160px" alt="Квадрокоптер">Квадрокоптеры</a>
+              <a class="category-link copter" href="#">Квадрокоптеры</a>
             </li>
           </ul>
         </div>
@@ -229,7 +194,7 @@
         <div class="benefits-container">
 
           <h2 class="visually-hidden" hidden>Описание преимуществ</h2>
-          <div class="tabs">
+          <div class="tabs dilevery">
             <nav class="tabs-items">
               <button class="tabs-button" type="button">Доставка</button>
               <button class="tabs-button" type="button">Гарантия</button>
@@ -243,7 +208,6 @@
                 <div class="discription">Мы с удовольствием доставим ваш товар прямо
                   к вашему подъезду совершенно бесплатно! Ведь
                   мы неплохо заработаем, поднимая его на ваш этаж.
-
                 </div>
               </div>
               <div id="tab_02" class="tabs-block">
@@ -266,39 +230,15 @@
 
       <div class="delivery-container">
         <div class="delivery">
+          <button class="button-car auto" type="button">
+            <span class="visually-hidden">Доставка</span>
+          </button>
 
-          <svg aria-hidden="true" focusable="false" width="125" height="100" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <path fill="#FFE17F" d="M0 0h125v100H0z" />
-            <g clip-path="url(#a)" fill="#000">
-              <path
-                d="m85.7 50.4-6.5-8.2c-.3-.4-.7-.6-1.2-.6h-8.3v-5.1c0-.8-.7-1.5-1.5-1.5H40.5c-.8 0-1.5.7-1.5 1.5s.7 1.5 1.5 1.5h26.2v21.7H54.8c-.6-1.9-2.4-3.3-4.5-3.3-2.6 0-4.8 2.2-4.8 4.8 0 2.6 2.2 4.8 4.8 4.8 2.1 0 3.9-1.4 4.5-3.3h13.4c.8 0 1.5-.7 1.5-1.5V44.6h7.6l5.7 7.3v7.9h-2.2c-.6-1.9-2.4-3.3-4.5-3.3-2.6 0-4.8 2.2-4.8 4.8 0 2.6 2.1 4.8 4.8 4.8 2.1 0 3.9-1.4 4.5-3.3h3.7c.8 0 1.5-.7 1.5-1.5v-9.9c0-.4-.1-.7-.3-1ZM50.3 63c-1 0-1.8-.8-1.8-1.8s.8-1.8 1.8-1.8 1.8.8 1.8 1.8-.9 1.8-1.8 1.8Zm26.1 0c-1 0-1.8-.8-1.8-1.8s.8-1.8 1.8-1.8 1.8.8 1.8 1.8-.9 1.8-1.8 1.8Z" />
-              <path
-                d="M58.4 44.6c.8 0 1.5-.7 1.5-1.5s-.7-1.5-1.5-1.5H43.8c-.8 0-1.5.7-1.5 1.5s.7 1.5 1.5 1.5h14.6ZM56.7 49.7c0-.8-.7-1.5-1.5-1.5H40.5c-.8 0-1.5.7-1.5 1.5s.7 1.5 1.5 1.5h14.7c.8 0 1.5-.7 1.5-1.5Z" />
-            </g>
-            <defs>
-              <clipPath id="a">
-                <path fill="#fff" d="M39 35h47v31H39z" />
-              </clipPath>
-            </defs>
-          </svg>
           <div class="delivery-item">
             <a class="button-delivery" href="#">Доставим редкий товар под заказ</a>
           </div>
-          <button class="button-info" type="button">
-            <svg aria-hidden="true" focusable="false" width="41" height="40" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <circle cx="20.5" cy="20" r="20" fill="#DCDCDC" fill-opacity=".5" />
-              <g opacity=".3" clip-path="url(#a)" fill="#000">
-                <path d="M21 14h-2v2h2v-2ZM21 18h-2v8h2v-8Z" />
-              </g>
-              <defs>
-                <clipPath id="a">
-                  <path fill="#fff" d="M19 14h2v12h-2z" />
-                </clipPath>
-              </defs>
-            </svg>
-            <span class="visually-hidden">Информауия о</span>
+          <button class="button-info infoicon" type="button">
+            <span class="visually-hidden">Информация о</span>
           </button>
 
         </div>
