@@ -144,6 +144,10 @@ body {
   text-decoration: none;
 }
 
+.navigation-link:hover {
+  opacity: 0.6;
+}
+
 .benefits {
   background-color: #F0F0F0;
 }
@@ -186,6 +190,10 @@ body {
   background-position: center;
 }
 
+.user-navigation-link:hover {
+  opacity: 0.6;
+}
+
 .user::before {
   padding-right: 12px;
   background-image: url(../images/user.svg);
@@ -223,12 +231,30 @@ body {
   height: 40px;
 }
 
+.input-search::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.iconsearch::before {
+  background-image: url(../images/searchicons.svg);
+}
+
 .menu-search-button {
   background: none;
   border: 2px solid #000000;
   border-radius: 0px 50px 50px 0px;
   width: 160px;
   height: 46px;
+}
+
+.menu-search-button:hover {
+ color: #ffffff;
+ background-color: #000000;
 }
 
 .catalog-button {
@@ -243,6 +269,10 @@ body {
   border: none;
   background: none;
   position: relative;
+}
+
+.catalog-button:hover {
+  color: #000000;
 }
 
 .catalog-button::after {
@@ -383,8 +413,21 @@ body {
   color: black;
   margin: 0;
   padding: 0;
-  margin-top: 120px;
   margin-bottom: 28px;
+}
+
+.slider-item-1::before {
+  content: "";
+  display: block;
+  width: 250px;
+  height: 135px;
+  /*background-color: #000000;*/
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.number::before {
+  background-image: url(../images/01.svg);
 }
 
 .gallery-discription {
@@ -638,11 +681,16 @@ body {
   background-color: #F0F0F0;
 }
 
+.delivery:hover {
+  opacity: 0.3;
+}
 
 .button-car {
   border: none;
   width: 125px;
   height: 100px;
+  margin: 0;
+  padding: 0;
 }
 
 .button-car::before {
@@ -674,7 +722,6 @@ body {
   width: 125px;
   height: 100px;
 }
-
 
 .button-info {
   width: 125px;
@@ -949,6 +996,21 @@ body {
   color: #444444;
   margin: 0;
   padding: o;
+}
+
+.lable-discription::before {
+  content: "";
+  display: inline-block;
+  align-items: center;
+  width: 16px;
+  height: 16px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.check::before {
+  background: url(../images/tick-big.svg);
+  margin-right: 16px;
 }
 
 .footer-discription {
