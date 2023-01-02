@@ -63,12 +63,14 @@ body {
   margin: 0 auto;
   width: 1160px;
   background-color: #FFE17F;
+  background-image: linear-gradient(white 25px, #ffe17f 25px);
 }
 
 .slider {
   margin: 0 auto;
   width: 1160px;
   position: relative;
+  background-image: linear-gradient(#ffe17f 160px, #ffff 25px);
 }
 
 .category-container {
@@ -79,7 +81,7 @@ body {
 .benefits-container {
   margin: 0 auto;
   width: 1160px;
-  background-color: #F0F0F0;
+  background-image: linear-gradient(#fff 25%, #F0F0F0 25%);
 }
 
 .delivery-container {
@@ -158,7 +160,8 @@ body {
 }
 
 .benefits {
-  background-color: #F0F0F0;
+
+  background-image: linear-gradient(#fff 25%, #F0F0F0 25%);
 }
 
 .main-menu {
@@ -278,6 +281,7 @@ body {
   border: none;
   background: none;
   position: relative;
+  height: 50px;
 }
 
 .catalog-button:hover {
@@ -295,8 +299,8 @@ body {
 
 .roundbutton::after {
   background-image: url(../images/roundbutton.svg);
-  position: absolute;
   margin-left: 7px;
+  vertical-align: middle;
 }
 
 .slider {
@@ -428,7 +432,7 @@ body {
 .slider-item-1::before {
   content: "";
   display: block;
-  width: 250px;
+  width: 210px;
   height: 135px;
   /*background-color: #000000;*/
   background-repeat: no-repeat;
@@ -676,6 +680,7 @@ body {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: #000000;
+  background-color: transparent;
   border: none;
 }
 
