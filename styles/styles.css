@@ -66,6 +66,14 @@ body {
   background-image: linear-gradient(white 25px, #ffe17f 25px);
 }
 
+.inner-header-container {
+  margin: 0 auto;
+  width: 1160px;
+  margin-bottom: 34px;
+  background-color: #FFE17F;
+  background-image: linear-gradient(white 30px, #ffe17f 150px);
+}
+
 .slider {
   margin: 0 auto;
   width: 1160px;
@@ -160,7 +168,6 @@ body {
 }
 
 .benefits {
-
   background-image: linear-gradient(#fff 25%, #F0F0F0 25%);
 }
 
@@ -312,6 +319,7 @@ body {
   display: grid;
   gap: 40px;
   grid-template-columns: 560px 560px;
+  position: relative;
 }
 
 .slider-pagination {
@@ -324,7 +332,7 @@ body {
   justify-content: center;
   position: absolute;
   margin-left: 542px;
-  margin-top: 500px;
+  margin-top: 530px;
 }
 
 .slider-pagination-item {
@@ -479,6 +487,7 @@ body {
 }
 
 .hero-button {
+  position: relative;
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 800;
@@ -488,9 +497,26 @@ body {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: #000000;
+  width: 220px;
+  height: 40px;
   border: none;
   margin-bottom: 50px;
   background-color: transparent;
+}
+
+.hero-button:hover::before {
+  height: 100%;
+}
+
+.hero-button::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 8px;
+  width: 220px;
+  background-color: #FFE17F;
 }
 
 .slider-item:not(.active) {
@@ -668,6 +694,7 @@ body {
 }
 
 .tabs-button {
+  position: relative;
   width: 160px;
   height: 40px;
   margin-bottom: 35px;
@@ -682,6 +709,21 @@ body {
   color: #000000;
   background-color: transparent;
   border: none;
+}
+
+.tabs-button::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 8px;
+  width: 160px;
+  background-color: #FFE17F;
+}
+
+.tabs-button:hover::before {
+  height: 100%;
 }
 
 .delivery {
@@ -980,7 +1022,26 @@ body {
   margin-left: 252px;
 }
 
+.appointment-form-label {
+  position: absolute;
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #444444;
+  opacity: 0.5;
+  margin: 0;
+  padding: 0;
+}
+
 .subscription-input {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  position: relative;
   width: 557px;
   height: 55px;
   border: none;
@@ -999,6 +1060,12 @@ body {
   width: 253px;
   height: 55px;
   border: 3px solid #C4C4C4;
+}
+
+.subscription-input-button:hover {
+  border: none;
+  color: #fff;
+  background-color: #000000;
 }
 
 .lable-discription {
@@ -1042,10 +1109,11 @@ body {
 
 .page-footer-conteiner {
   display: grid;
-  grid-template-columns: 239px 444px 175px;
-  gap: 64px;
+  grid-template-columns: 239px 444px 239px;
+  gap: 190px;
   margin: 0 auto;
   width: 1160px;
+  margin-top: 62px;
 }
 
 .navigation-link {
@@ -1078,7 +1146,7 @@ body {
 }
 
 .footer-social-item {
-  background-color: #444444;
+  background-color: #fff;
   width: 40px;
   height: 40px;
 }
@@ -1167,6 +1235,7 @@ body {
   color: #000000;
   margin: 0;
   padding: 0;
+  text-decoration: none;
 }
 
 .breadcrumbs-item {
