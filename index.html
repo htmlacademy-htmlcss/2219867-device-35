@@ -39,6 +39,32 @@
                 <a class="user-navigation-link basket" href="#">
                   <span class="user-navigation">Корзина</span>
                 </a>
+                <div class="popover popover-cart">
+                  <button class="visually-hidden popover-close-button button button-light">
+                    <span class="visually-hidden">Закрыть</span>
+                  </button>
+                  <div class="popover-content">
+                    <h2 class="visually-hidden popover-title">Корзина</h2>
+                    <ul class="cart-items-list">
+                      <li class="cart-item">
+                        <p class="cart-item-title">Любительская селфи-палка</p>
+                        <button type="button" class="cart-item-button button">
+                          <span class="visually-hidden">Открыть корзину</span>
+                        </button>
+                      </li>
+                      <li class="cart-item">
+                        <p class="cart-item-title">Любительская селфи-палка</p>
+                        <button type="button" class="cart-item-button button">
+                          <span class="visually-hidden">Открыть корзину</span>
+                        </button>
+                      </li>
+                    </ul>
+                    <button type="button" class="popover-content-button button">
+                      <span class="button-name">Открыть корзину</span>
+                      <span class="visually-hidden">Открыть корзину</span>
+                    </button>
+                  </div>
+                </div>
               </li>
             </ul>
           </div>
@@ -363,7 +389,44 @@
 
       </div>
     </footer>
+    <div class="modal-container modal-container-close">
+      <div class="modal modal-auth">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Доставка под заказ</h2>
+          <form class="auth-form userdata" action="https://echo.htmlacademy.ru/" method="post">
+            <p class="field-group">
+              <label class="visually-hidden" for="auth-name">Введите имя</label>
+              <input class="auth-form-field field" type="text" id="auth-name" name="auth-name" placeholder="Ваше имя">
+            </p>
+            <p class="field-group">
+              <label class="visually-hidden" for="auth-e-mail">Ваш e-mail:</label>
+              <input class="auth-form-field field" type="e-mail" id="e-mail" name="e-mail" placeholder="Почта">
+            </p>
+          </form>
+          <form class="auth-form deliveryuser" action="https://echo.htmlacademy.ru/" method="post">
+            <p class="field-group">
+              <label class="visually-hidden" for="auth-delivery">Что нужно привезти:</label>
+              <input class="auth-form-field field-description" type="text" id="auth-delivery" name="auth-delivery"
+                placeholder="В свободной форме">
+            </p>
+            <div class="quantity">
+              <button class="button auth-form-button" type="submit"></button>
+              <p class="field-group">
+                <label class="visually-hidden" for="auth-quantity">Количество</label>
+                <input class="auth-form-field field-quattity" type="quantity" id="auth-quantity" name="auth-quantity"
+                  placeholder="1">
+              </p>
+              <button class="button auth-form-button plus" type="submit"></button>
+            </div>
+          </form>
+          <button class="button form-button" type="submit">Отправить</button>
 
+        </section>
+      </div>
+    </div>
   </body>
 
 </html>
