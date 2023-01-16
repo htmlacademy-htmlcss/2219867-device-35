@@ -18,10 +18,14 @@
         <nav class="navigation">
 
           <div class="user-menu">
-            <form class="menu-search iconsearch" method="get">
-              <input class="input-search" type="text" placeholder="Поиск по сайту">
-              <button class="menu-search-button" type="submit">Найти</button>
-            </form>
+
+            <div class="search-container iconsearch">
+              <span class="input-placeholder">Поиск по сайту</span>
+              <form class="menu-search" method="get">
+                <input class="input-search" type="text" placeholder=" ">
+                <button class="menu-search-button" type="submit">Найти</button>
+              </form>
+            </div>
 
             <ul class="navigation-user">
               <li class="navigation-item">
@@ -37,6 +41,7 @@
               </li>
               <li class="navigation-item">
                 <a class="user-navigation-link basket" href="#">
+                  <span class="item-cart">2</span>
                   <span class="user-navigation">Корзина</span>
                 </a>
                 <div class="popover popover-cart">
@@ -70,7 +75,23 @@
           </div>
 
           <div class="main-menu">
-            <button class="catalog-button roundbutton">Каталог товаров</button>
+
+            <div class="catalog-container">
+              <button class="catalog-button roundbutton">Каталог товаров</button>
+              <ul class="cataloge-list">
+                <li class="cataloge-item">
+                  <a class="cataloge-link" href="#">Виртуальная реальность</a>
+                </li>
+                <li class="cataloge-item">
+                  <a class="cataloge-link" href="#">Моноподы для cелфи</a>
+                </li>
+                <li class="cataloge-item">
+                  <a class="cataloge-link" href="#">Экшн-камеры</a>
+                </li>
+              </ul>
+
+            </div>
+
             <ul class="navigation-user-list">
               <li class="main-navigation-item">
                 <a class="navigation-link" href="dilevery.html">Доставка</a>
@@ -382,7 +403,7 @@
           </ul>
         </div>
 
-        <div class="footer-contacts-phone-contacts-logo">
+       <div class="footer-contacts-phone-contacts-logo">
           <a class="footer-contacts-phone" href="#">+7 (812) 812-12-12</a>
           <img class="contacts-logo" src="/images/htmlacademy-logo.png" width="115" height="33" alt="Логотип академии">
         </div>
